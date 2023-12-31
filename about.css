@@ -1,0 +1,104 @@
+
+.about_achievements{
+    margin-top: 3rem;
+    /* margin-bottom: 6rem; */
+
+
+}
+.abt_achv_conatiner{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:1.5rem;
+    height: 387px;
+}
+.achv_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+
+}
+.achv_card{
+    background: var(--color-bg2);
+    padding: 2.3rem;
+    border-radius:1rem ;
+    text-align: center;
+    transition: var(--transition);
+}
+.achv_card:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+.Achv_imgcon img{
+
+width: 6rem;
+height: 6rem;
+margin-bottom: 1rem;
+border-radius: 1rem;
+}
+ .achv_left img{
+    width: 26rem;
+    height: 36rem;
+    margin-right:80px;
+} 
+/* Team Member */
+.team{
+    position: relative;
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem  rgba(0,0,0,0.5);
+    margin-top: 6rem;
+   
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.team h2{
+    margin-bottom: 60px;
+}
+.team_member{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-prim);
+}
+.team_member-img img{ 
+ width: 157px;
+ height: 260px;
+  filter: saturate(0);
+}
+.team_member:hover img{ 
+    filter: saturate(1);
+  }
+  
+.team_info{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team_info p{
+    color:var(--color-light);
+}
+.team_social{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-prim);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0,0,0,0.3);
+    transition: var(--transition);
+    
+}
+.team_member:hover .team_social{
+    right: 0;
+}
+.team_social a{
+    padding: 1rem;
+}
