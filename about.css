@@ -102,3 +102,107 @@ border-radius: 1rem;
 .team_social a{
     padding: 1rem;
 }
+
+/* Media Query */
+@media  screen and (max-width:600px) {
+    .container{
+        width: 90%;
+        /* overflow: hidden; */
+    }
+    h1{
+        font-size: 2.2rem;
+ 
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+          font-size: 1.2rem;
+    }
+     #close-menu-btn{
+       display: none;
+    }
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: rgb(249, 249, 249);
+        cursor: pointer;
+    }
+   
+    .nav_menu{
+       position: fixed;
+       top: 5rem;
+       right: 5%;
+       height: fit-content;
+       width: 18rem;
+       flex-direction: column;
+       gap: 0;
+       display: none;
+    }
+
+
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu li a{
+        background: var(--color-prim);
+        box-shadow: -4rem 6rem 10rem rgba(0,0,0.6);
+        width:100% ;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+    .abt_achv_conatiner{
+        grid-template-columns: 1fr;
+    }
+   .achv_right p,h1{
+    width: 90%;
+   }
+    .achv_left img{
+        width: 90%;
+        height: 19rem;
+        /* display: none; */
+    }
+    .achv_cards{
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 2rem;
+    }
+    .team{
+        width: 115%;
+        height: 128rem;
+    }
+    .team h2{
+        position: relative;
+        top: 38rem;
+    }
+
+    .team_container{
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 38rem;
+    }
+    .team_member-img img{
+    
+        position: relative;
+        right: 22px;
+        
+    }
+    .footer_container{
+        position: relative;
+        top: 50rem;
+    }
+    .footer_copy small{
+        position: relative;
+        top: 35rem;
+    }
+}
