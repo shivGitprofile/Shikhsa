@@ -111,3 +111,127 @@ input,textarea{
     color: white;
     margin-left: 0.3rem;
 }
+    
+/* Media Query */
+@media  screen and (max-width:600px) {
+
+    
+    h1{
+        font-size: 2.2rem;
+  
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+          font-size: 1.2rem;
+    }
+     #close-menu-btn{
+       display: none;
+    }
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: rgb(249, 249, 249);
+        cursor: pointer;
+    }
+   
+    .nav_menu{
+       position: fixed;
+       top: 5rem;
+       right: 5%;
+       height: fit-content;
+       width: 18rem;
+       flex-direction: column;
+       gap: 0;
+       display: none;
+    }
+  
+  
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu li a{
+        background: var(--color-prim);
+        box-shadow: -4rem 6rem 10rem rgba(0,0,0.6);
+        width:100% ;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+   /* Responsive CSS for Phones */
+/* Responsive CSS for Phones */
+
+/* Contact Section */
+.contact {
+  padding: 2rem 1rem; /* Adjust padding for smaller screens */
+}
+
+.IIMT {
+  display: flex;
+  flex-direction: column; /* Change to column layout for smaller screens */
+  align-items: center; /* Center align items */
+}
+
+.contact_aside {
+  width: 100%; /* Adjust width to fit smaller screens */
+  padding: 2rem; /* Adjust padding */
+  margin-bottom: 2rem; /* Add margin to separate from form */
+}
+
+.contact_form {
+  max-width: 100%; /* Adjust max-width to fit smaller screens */
+  width: 100%; 
+  margin-top: 6rem; /* Add margin to separate from contact_aside */
+ margin-left: 0px;
+ background-color: rgb(20, 20, 23);
+}
+
+/* Form Info container */
+.form_info {
+  flex-direction: column; /* Change to column layout for smaller screens */
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin-bottom: 1rem; /* Adjust margin for spacing */
+}
+
+/* Button styling */
+.btn {
+  width: 100%; /* Make button full-width */
+}
+
+/* Footer */
+.footer_container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.footer__1,
+.footer_2,
+.footer_3,
+.footer_4 {
+  flex-basis: 100%; /* Make footer columns full-width on smaller screens */
+  margin-bottom: 2rem; /* Add margin between columns */
+}
+
+.footer_copy {
+  text-align: center; /* Center align footer copyright */
+}
+
+}
