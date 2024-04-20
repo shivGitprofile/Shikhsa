@@ -362,26 +362,174 @@ header{
     text-align: center;
     
 }
-/* Media quire */
-@media screen and (max-width:600px) {
+
+
+/*MEDIA QUERY */
+
+@media  screen and (max-width:1024px) {
     .container{
-        width: var(--conatiner-width-sm);
+        width: 90%;
+        /* overflow: hidden; */
+       
     }
-    /* Nav menu */
+    h1{
+        font-size: 2.2rem;
+
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+          font-size: 1.2rem;
+    }
+     #close-menu-btn{
+       display: none;
+    }
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: rgb(249, 249, 249);
+        cursor: pointer;
+    }
+   
     .nav_menu{
-        right: 3%;
+       position: fixed;
+       top: 5rem;
+       right: 5%;
+       height: fit-content;
+       width: 18rem;
+       flex-direction: column;
+       gap: 0;
+       display: none;
     }
-    /* Header */
-    header{
-        height: 100vh;
+
+
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu li a{
+        background: var(--color-prim);
+        box-shadow: -4rem 6rem 10rem rgba(0,0,0.6);
+        width:100% ;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+   .header_right{
+    width: 26rem;
+    height: 29rem;
+    margin: 4px 0px 0px 20px;
+   }
+   #lal{
+    position:relative;
+    bottom: 21px;
+   }
+   .catrg{
+    width: 11.5rem;
+    height: 15.4rem;
+   }
+   .course{
+    width: 18.9rem;
+   }
+}
+@media screen and (max-width:600px){
+
     
+    .container{
+        width: 90%;
+        /* overflow: hidden; */
+
+    }
+    .nav_menu{
+        right: 5%;
+    }
+    h1{
+        font-size: 1.4rem;
     }
     .head_container{
         grid-template-columns: 1fr;
         text-align: center;
-        margin-top: 0;
+
+    }
+    .header_left h1{
+        font-size: 1.8rem;
+        width: fit-content;
+       margin-left: 1rem;
+       margin-bottom: 2rem;
     }
     .header_left p{
-        margin-bottom: 1.3;
+        font-size: 0.6rem;
+        width: fit-content;
+    }
+    .header_left a{
+        right: 0px;
+    }
+    .header_right{
+          height: 19rem;
+          width: fit-content;
+          position: relative;
+          bottom: 3rem;
+    }
+    .catg{
+        position: relative;
+        top: 13rem;
+        bottom: 10rem;
+        height: 72rem;
+    }
+    .catg_container{
+        grid-template-columns: 1fr ;
+    }
+    .catg_right{
+        grid-template-columns: 1fr 1fr;
+          margin-top:20px;
+         
+    }
+    .catrg{
+        width: 11rem;
+    }
+    .courses{
+       
+        position: relative;
+        margin-top: 10rem;
+    }
+     #lall{
+        margin: 3rem 0rem 0rem 1rem;
+        font-size: 2rem;
+        width:max-content;
+        text-decoration:underline palevioletred;
+        
+    }
+    .courses_container
+    {
+        grid-template-columns: 1fr;
+        margin-left: 2rem;
+    }
+    .faqs_container
+    {
+        grid-template-columns: 1fr ;
+    
+    }
+    
+    
+    .testimonial_body{
+    padding: 0.3rem;
+    }
+
+    .footer_container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0;
+    }
+    .flex {
+        justify-content: center;
     }
 }
