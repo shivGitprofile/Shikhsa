@@ -7,9 +7,85 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="./css/courses.css"/>
     <title>Document</title>
     <style>
+      
+/* Media Query */
+@media  screen and (max-width:600px) {
+
+    
+  h1{
+      font-size: 2.2rem;
+
+  }
+  h2{
+      font-size: 1.7rem;
+  }
+  h3{
+      font-size: 1.4rem;
+  }
+  h4{
+        font-size: 1.2rem;
+  }
+   #close-menu-btn{
+     display: none;
+  }
+  nav button{
+      display: inline-block;
+      background: transparent;
+      font-size: 1.8rem;
+      color: rgb(249, 249, 249);
+      cursor: pointer;
+  }
+ 
+  .nav_menu{
+     position: fixed;
+     top: 5rem;
+     right: 5%;
+     height: fit-content;
+     width: 18rem;
+     flex-direction: column;
+     gap: 0;
+     display: none;
+  }
+
+
+  .nav_menu li{
+      width: 100%;
+      height: 5.8rem;
+  }
+  .nav_menu li a{
+      background: var(--color-prim);
+      box-shadow: -4rem 6rem 10rem rgba(0,0,0.6);
+      width:100% ;
+      height: 100%;
+      display: grid;
+      place-items: center;
+  }
+  .nav_menu li a:hover{
+      background: var(--color-bg2);
+      color: var(--color-white);
+  }
+  .courses  h2{
+    position: relative;
+    right: 15rem;
+    width: max-content;
+  }
+ .courses_container{
+  position: relative;
+  
+ }
+ 
+ .footer_container{
+  position: relative;
+  top: 0rem;
+}
+.footer_copy small{
+ display: none;
+}
+}
+
         .courses{
             margin-top: 1rem;
         }
@@ -21,12 +97,12 @@
         <a href="index.html" style="font-size: 24px">Shikhsa </a>
         <ul class="nav_menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">about</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
-        <!-- <button id="open-menu-btn"><i class="bi bi-list"></i></button> -->
-        <!-- <button id="close-btn"><i class="bi bi-x-lg"></i></button> -->
+        <i id="open-menu-btn" class="bi bi-list-task"></i>
+      <i id="close-menu-btn" class="bi bi-x-lg"></i>
       </div>
     </nav>
     
